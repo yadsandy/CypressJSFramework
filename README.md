@@ -1,1 +1,1 @@
-# CypressJSFramework
+# PlaywrightJSFramework
