@@ -1,0 +1,26 @@
+{
+  "name": "playwright-ts-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadsandy/playwright-ts-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yadsandy/playwright-ts-framework/issues"
+  },
+  "homepage": "https://github.com/yadsandy/playwright-ts-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.12.0"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0"
+  }
+}
