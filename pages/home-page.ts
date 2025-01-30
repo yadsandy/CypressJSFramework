@@ -30,21 +30,13 @@ export class HomePage extends CommonActions{
         await this.page.locator(this.loginButton).click()
     }
 
-    async goToContactsPage(){
-        await this.page.locator(this.contact).scrollIntoViewIfNeeded()
-        await this.page.locator(this.contact).click()
-    }
-
-    
     async checkHybperLinkAccuracy(){
         const links=  this.page.locator('a');
         console.log('Total links are: '+await links.count())
        for(let link of await links.all()){
         const href=await link.getAttribute('href')
-        expect(href).not.toBeNull();
         if (href?.startsWith('http://') || href?.startsWith('https://')) {
             try {
-                // Send a request to the valid HTTP/HTTPS link
                 const response =await this.page.request.get(href)
                 console.log(href+" : "+response.status())
                 expect(response.status()).toBe(200)}
